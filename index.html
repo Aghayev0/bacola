@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/css/main.css">
+    <link rel="stylesheet" href="./owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/055067d735.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="head__covid">Due to the <strong>COVID 19</strong> epidemic, orders may be processed with a slight
+            delay</div>
+        <div style="font-size: 12px;" class="allhead">
+            <div class="allhead__head">
+                <div class="allhead__head__left">
+                    <p>About us</p>
+                    <p>My account</p>
+                    <p>Wishlist</p>
+                    <p>Order Tracking</p>
+                </div>
+                <div class="allhead__head__mid">
+                    <i class="fa-regular fa-hand"></i>
+                    <p>100% Secure delivery without contacting the courier</p>
+                </div>
+                <div class="allhead__head__right1">
+                    <p>Need help? Call Us:<span class="right1__span">+ 0020 500</span></p>
+                </div>
+                <div class="allhead__head__right2">
+                    <div class="allhead__head__right__first">
+                        <div class="dropdown">
+                            <button class="dropbtn">English<i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">English</a>
+                                <a href="#">Spanish</a>
+                                <a href="#">German</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allhead__head__right__second">
+                        <div class="dropdown">
+                            <button class="dropbtn">USD<i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">USD</a>
+                                <a href="#">INR</a>
+                                <a href="#">GBP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="allhead__navbar">
+                <div class="allhead__navbar__image">
+                    <i style="display: none;" id="hamburger" class="fa-solid fa-bars"></i>
+                    <img id="img1" src="./bacola-logo.png" alt="">
+                    <img id="img2" src="./bacola-logo-mobile.png" alt="">
+                    <p>Online Grocery Shopping Center</p>
+                </div>
+                <div class="tablet__image">
+                    <img src="./bacola-logo-mobile.png" alt="">
+                </div>
+                <div id="location" class="allhead__navbar__location">
+                    <div class="allhead__navbar__location__left">
+                        <p>Your Location</p>
+                        <h1 class="">Select a Location</h1>
+                    </div>
+                    <div class="allhead__navbar__location__right">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="allhead__navbar__input">
+                    <input type="text" placeholder="Search For Products">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="allhead__navbar__user">
+                    <i class="fa-regular fa-circle-user"></i>
+                </div>
+                <div class="allhead__navbar__basket">
+
+                    <div class="allhead__navbar__basket__head">
+                        <span class="dolar">$0.00</span>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <div class="allhead__navbar__basket__item">
+                            <img src="./marketbag.png" alt="">
+                            <p>No Products in the cart</p>
+                            <h4>We reduce shipping prices to only 2.49 €!</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Choose your Delivery Location</h2>
+                    <p>Enter your address and we will specify the offer for your area.</p>
+                    <div class="modal-content__inp">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="input" id="inp" placeholder="Search an area">
+                    </div>
+                    <div class="modal-content__countries">
+                        <div class="countries">
+                            <p>Select a location</p>
+                            <p>Clear All</p>
+                        </div>
+                        <div class="countries">
+                            <p>Alabama</p>
+                            <p>Min:$130</p>
+                        </div>
+                        <div class="countries">
+                            <p>Alaska</p>
+                            <p>Min:$120</p>
+                        </div>
+                        <div class="countries">
+                            <p>Arizona</p>
+                            <p>Min:$150</p>
+                        </div>
+                        <div class="countries">
+                            <p>Californiya</p>
+                            <p>Min:$110</p>
+                        </div>
+                        <div class="countries">
+                            <p>Colorado</p>
+                            <p>Min:$140</p>
+                        </div>
+                        <div class="countries">
+                            <p>Florida</p>
+                            <p>Min:$160</p>
+                        </div>
+                        <div class="countries">
+                            <p>Georgia</p>
+                            <p>Min:$120</p>
+                        </div>
+                        <div class="countries">
+                            <p>Kansas</p>
+                            <p>Min:$170</p>
+                        </div>
+                        <div class="countries">
+                            <p>Minnesota</p>
+                            <p>Min:$120</p>
+                        </div>
+                        <div class="countries">
+                            <p>New-york</p>
+                            <p>Min:$110</p>
+                        </div>
+                        <div class="countries">
+                            <p>Washington</p>
+                            <p>Min:$130</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="myModal1" class="modal__second">
+                <div class="modal-content__second">
+                    <img src="./bacola-logo.png" alt="">
+                    <span class="close">&times;</span>
+                    <div class="modal-content__second__countries">
+                        <div id="location1" class="allhead__navbar__location1">
+                            <div class="allhead__navbar__location__left">
+                                <p>Your Location</p>
+                                <h1 class="">Select a Location</h1>
+                            </div>
+                            <div class="allhead__navbar__location__right">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="allhead__navbar__bottom1">
+                            <div id="categoriesButton" class="allhead__navbar__bottom1__categories1">
+                                <i class="fa-solid fa-bars"></i>
+                                ALL CATEGORIES
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div id="modalcategories" class="modal__navbar__categories__show1">
+                                <p> Fruits & Vegetables</p>
+                                <p> Meats & Seafood</p>
+                                <p> Breakfast & Dairy</p>
+                                <p> Beverages</p>
+                                <p> Breads & Bakery</p>
+                                <p> Frozen Foods</p>
+                                <p> Biscuits & Snacks</p>
+                                <p> Grocery & Staples</p>
+                                <br>
+                                <div class="categories__line"></div>
+                                <br>
+                                <p>Value Of Day</p>
+                                <p>Top 100 Offers</p>
+                                <p>New Arrivals</p>
+                                <div class="categories__line"></div>
+                            </div>
+                            <div class="site__navigation">
+                                <a href="">Site Navigation</a>
+                            </div>
+                            <div class="categories__line1"></div>
+                            <div class="ctg__display">
+                                <p>Home</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="categories__line1"></div>
+                            <div class="ctg__display">
+                                <p>Shop</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="modal__ctg">
+                                <div class="categories__line1"></div>
+                                <p> Meats & Seafood</p>
+                                <div class="categories__line1"></div>
+                                <p> Breakfast & Dairy</p>
+                                <div class="categories__line1"></div>
+                                <p> Beverages</p>
+                                <div class="categories__line1"></div>
+                                <p>Blog</p>
+                                <div class="categories__line1"></div>
+                                <p>Contact</p>
+                                <div class="categories__line1"></div>
+                            </div>
+                            <div class="copyright__text">Copyright 2022 © Bacola WordPress Theme. All rights reserved.
+                                Powered by KlbTheme.
+                            </div>
+                            <div class="categories__line1"></div>
+                            <div class="language__dropdown">
+                                <div id="lan" class="language__dropdown__main">
+                                    <p>English</p>
+                                    <i id="cevron" class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div id="lantext" class="language__dropdown__text">
+                                <p>English</p>
+                                <p>Spanish</p>
+                                <p>German</p>
+                            </div>
+                            <div class="language__dropdown1">
+                                <div id="lan1" class="language__dropdown__main1">
+                                    <p>USD</p>
+                                    <i id="cevron1" class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div id="lantext1" class="language__dropdown__text1">
+                                <p>USD</p>
+                                <p>INR</p>
+                                <p>GBP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="allhead__navbar__bottom">
+                <div id="cbtn" class="allhead__navbar__bottom__categories">
+                    <i class="fa-solid fa-bars"></i>
+                    ALL CATEGORIES
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="allhead__navbar__bottom__pages">
+                    <p>HOME<i class="fa-solid fa-chevron-down"></i></p>
+                    <p>SHOP<i class="fa-solid fa-chevron-down"></i></p>
+                    <p>MEATS&SEAFOOD</p>
+                    <p>BAKERY</p>
+                    <p>BEVERAGES</p>
+                    <p>BLOG</p>
+                    <p>CONTACT</p>
+                </div>
+            </div>
+            <div class="kardisp">
+                <div id="categshow" class="allhead__navbar__bottom__categories__show">
+                    <div id="categshowtop">
+                        <p> Fruits & Vegetables</p>
+                        <p> Meats & Seafood</p>
+                        <p> Breakfast & Dairy</p>
+                        <p> Beverages</p>
+                        <p> Breads & Bakery</p>
+                        <p> Frozen Foods</p>
+                        <p> Biscuits & Snacks</p>
+                        <p> Grocery & Staples</p>
+                    </div>
+                    <div id="categshowbottom">
+                        <p>Value Of Day</p>
+                        <p>Top 100 Offers</p>
+                        <p>New Arrivals</p>
+                    </div>
+                </div>
+                <div class="main__carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./karusel1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./karusel2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./karusel3.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main__section">
+            <div class="main__section__poster">
+                <img src="./organicposter.png" alt="">
+            </div>
+            <div class="main__section__rightside">
+                <div class="main__section__rightside__head">
+                    <div class="main__section__rightside__head__text">
+                        <h1>BEST SELLERS</h1>
+                        <p>Do not miss the current offers until the end of March.</p>
+                    </div>
+                    <div class="main__section__rightside__head__icon">
+                        View All
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+                <div class="main__section__carousel">
+                    <div class="owl-carousel">
+                        <div class="owl-carousel-1">
+                            <div class="prodrating">
+                                <div>
+                                    <p>19%</p>
+                                    <p>Organic</p>
+                                </div>
+                                <div class="iconsonprod">
+                                    <span><i class="fa-solid fa-compress"></i></span>
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                </div>
+                            </div>
+                            <img src="./product-image-46-346x310.jpg" alt="">
+                            <p>Field Roast Chao Cheese Creamy Original</p>
+                            <span>IN STOCK</span>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                1
+                            </div>
+                            <div class="price">
+                                <p>$24.00</p>
+                                <p>$19.50</p>
+                            </div>
+                            <button class="addtocart">Add to cart</button>
+                        </div>
+                        <div class="owl-carousel-1">
+                            <div class="prodrating">
+                                <p>10%</p>
+                                <p>Organic</p>
+                            </div>
+                            <img src="./product2.jpg" alt="">
+                            <p>Blue Diamond Almonds Lightly Salted</p>
+                            <span>IN STOCK</span>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                1
+                            </div>
+                            <div class="price">
+                                <p>$11.68</p>
+                                <p>$10.58</p>
+                            </div>
+                            <button class="addtocart">Add to cart</button>
+                        </div>
+                        <div class="owl-carousel-1">
+                            <div class="prodrating">
+                                <p id="faiz">15%</p>
+                                <p></p>
+                            </div>
+                            <img src="./product-image-32-346x310.jpg" alt="">
+                            <p>Nestle Original Coffee-Mate Coffee Creamer</p>
+                            <span>IN STOCK</span>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                1
+                            </div>
+                            <div class="price">
+                                <p>$13.99</p>
+                                <p>$11.99</p>
+                            </div>
+                            <button class="addtocart">Add to cart</button>
+                        </div>
+                        <div class="owl-carousel-1">
+                            <div class="prodrating">
+                                <p>35%</p>
+                                <p>Organic</p>
+                            </div>
+                            <img src="./product-image-7-346x310.jpg" alt="">
+                            <p>USDA Choice Angus Beef Stew Meat</p>
+                            <span>IN STOCK</span>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star greystar"></i>
+                                1
+                            </div>
+                            <div class="price">
+                                <p>$79.99</p>
+                                <p>$49.99</p>
+                            </div>
+                            <button class="addtocart">Add to cart</button>
+                        </div>
+                        <div class="owl-carousel-1">
+                            <div class="prodrating">
+                                <p id="faiz">14%</p>
+                                <p></p>
+                            </div>
+                            <img src="./product3.jpg" alt="">
+                            <p>Vital Farms Pasture-Raised Egg Bites </p>
+                            <span>IN STOCK</span>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star greystar"></i>
+                                1
+                            </div>
+                            <div class="price">
+                                <p>$29.00</p>
+                                <p>$25.00</p>
+                            </div>
+                            <button class="addtocart">Add to cart</button>
+                        </div>
+                        <div class="owl-carousel-1">
+                            <div class="prodrating">
+                                <p id="faiz">26%</p>
+                                <p></p>
+                            </div>
+                            <img src="./product4.jpg" alt="">
+                            <p>Werther’s Original Caramel Hard Candies</p>
+                            <span>IN STOCK</span>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                1
+                            </div>
+                            <div class="price">
+                                <p>$20.00</p>
+                                <p>$14.97</p>
+                            </div>
+                            <button class="addtocart">Add to cart</button>
+                        </div>
+                        <div class="owl-carousel-1">
+                            <div class="prodrating">
+                                <p>23%</p>
+                                <p id="recommended">Recommended</p>
+                            </div>
+                            <img src="./product5.jpg" alt="">
+                            <p>All Natural Italian-Style Chicken Meatballs</p>
+                            <span>IN STOCK</span>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                1
+                            </div>
+                            <div class="price">
+                                <p>$24.00</p>
+                                <p>$19.50</p>
+                            </div>
+                            <button class="addtocart">Add to cart</button>
+                        </div>
+                        <div class="owl-carousel-1">
+                            <div class="prodrating">
+                                <p id="faiz">24%</p>
+                                <p></p>
+                            </div>
+                            <img src="./product6.jpg" alt="">
+                            <p>Angie’s Boomchickapop Sweet & Salty Kettle </p>
+                            <span>IN STOCK</span>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star greystar"></i>
+                                1
+                            </div>
+                            <div class="price">
+                                <p>$4.29</p>
+                                <p>$3.29</p>
+                            </div>
+                            <button class="addtocart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__section__bottom">
+            <div class="main__section__bottom__poster">
+                <img src="./poster2.png" alt="">
+            </div>
+            <div class="main__section__bottom__head">
+                <div class="main__section__bottom__headposter">
+                    <img src="./poster3.png" alt="">
+                </div>
+                <div class="main__section__bottom__headtext">
+                    <div class="main__section__bottom__headtext__left">
+                        <p>HOT PRODUCT FOR <span> THIS WEEK</span></p>
+                        <p>Dont miss this opportunity at a special discount just for this week.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./owl.carousel.js"></script>
+    <script src="./owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
