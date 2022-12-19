@@ -991,10 +991,92 @@ html {
   width: 100%;
 }
 
+.main__section__bottom__headtext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .main__section__bottom__headtext__left p:first-child {
   font-size: 2rem;
   font-family: "Dosis", sans-serif;
+  margin: 0;
 }
 .main__section__bottom__headtext__left p:first-child span {
   color: red;
+}
+.main__section__bottom__headtext__left p:last-child {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6rem;
+  color: #888;
+}
+.main__section__bottom__headtext__right {
+  margin-top: 3rem;
+}
+
+.main__section__bottom__foot {
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 1rem;
+}
+.main__section__bottom__foot__container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.main__section__bottom__foot__container__right {
+  width: 77%;
+}
+.main__section__bottom__foot__container__right img {
+  width: 100%;
+}
+.main__section__bottom__foot__container__right .timer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.main__section__bottom__foot__container__right .timer p {
+  background-color: rgb(190, 190, 190);
+  padding: 0 0.2rem;
+}
+.main__section__bottom__foot__container__right p {
+  font-size: 2rem;
+}
+.main__section__bottom__foot__container__right .foot__weight {
+  display: flex;
+  flex-direction: row;
+}
+.main__section__bottom__foot__container__right .foot__weight p:first-child {
+  font-size: 1rem;
+  color: #888;
+  padding-right: 2rem;
+}
+.main__section__bottom__foot__container__right .foot__weight p:last-child {
+  font-size: 1rem;
+  color: rgb(0, 255, 0);
+}
+.main__section__bottom__foot__container__right .foot__price {
+  display: flex;
+  flex-direction: row;
+}
+.main__section__bottom__foot__container__right .foot__price p:first-child {
+  font-family: "Dosis", sans-serif;
+  color: grey;
+  text-decoration: line-through;
+  font-size: 1.5rem;
+  padding-top: 0.4rem;
+}
+.main__section__bottom__foot__container__right .foot__price p:last-child {
+  color: red;
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-family: "Dosis", sans-serif;
+}
+.main__section__bottom__foot__container__left {
+  width: 23%;
+}
+.main__section__bottom__foot__container__left img {
+  width: 100%;
 }

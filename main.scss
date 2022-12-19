@@ -955,21 +955,122 @@ html {
         }
     }
 }
-.main__section__bottom__head{
+
+.main__section__bottom__head {
     width: 74%;
 }
-.main__section__bottom__headposter{
+
+.main__section__bottom__headposter {
     width: 100%;
-    img{
+
+    img {
         width: 100%;
     }
 }
-.main__section__bottom__headtext{
-    &__left p:first-child{
+
+.main__section__bottom__headtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left p:first-child {
         font-size: 2rem;
         font-family: 'Dosis', sans-serif;
-        span{
+        margin: 0;
+
+        span {
             color: red;
+        }
+    }
+
+    &__left p:last-child {
+        font-family: 'Dosis', sans-serif;
+        font-size: 1.6rem;
+        color: #888;
+    }
+
+    &__right {
+        margin-top: 3rem;
+    }
+}
+
+.main__section__bottom__foot {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 1rem;
+
+    &__container {
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+
+        &__right {
+            width: 77%;
+
+            img {
+                width: 100%;
+            }
+
+            .timer {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                font-size: 2rem;
+                margin-top: 1rem;
+                p{
+                    background-color: rgb(190, 190, 190);
+                    padding: 0 .2rem;
+                }
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+            .foot__weight {
+                display: flex;
+                flex-direction: row;
+
+                & p:first-child {
+                    font-size: 1rem;
+                    color: #888;
+                    padding-right: 2rem;
+                }
+
+                & p:last-child {
+                    font-size: 1rem;
+                    color: rgb(0, 255, 0);
+                }
+            }
+
+            .foot__price {
+                display: flex;
+                flex-direction: row;
+
+                & p:first-child {
+                    font-family: 'Dosis', sans-serif;
+                    color: grey;
+                    text-decoration: line-through;
+                    font-size: 1.5rem;
+                    padding-top: .4rem;
+                }
+
+                & p:last-child {
+                    color: red;
+                    font-size: 2rem;
+                    margin-left: 1rem;
+                    font-family: "Dosis", sans-serif;
+                }
+            }
+        }
+
+        &__left {
+            width: 23%;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
